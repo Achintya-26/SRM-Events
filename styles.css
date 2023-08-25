@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, purple, black);
+    overflow-x: hidden;
+  }
+  
+  .page-heading {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .event-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .event-card {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card h2 {
+    margin-top: 0;
+  }
+  
+  /* Horizontal scrolling */
+  @media screen and (min-width: 768px) {
+    .event-container {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
